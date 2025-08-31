@@ -14,9 +14,11 @@ const links = [
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
   return (
-    <header className={cn(
-      "sticky top-0 z-50 w-full border-b border-white/10 bg-background/60 backdrop-blur supports-[backdrop-filter]:bg-background/60"
-    )}>
+    <header
+      className={cn(
+        "sticky top-0 z-50 w-full border-b border-white/10 bg-background/60 backdrop-blur supports-[backdrop-filter]:bg-background/60",
+      )}
+    >
       <div className="container flex h-16 items-center justify-between">
         <a href="#top" className="flex items-center gap-2">
           <span className="text-xl font-black tracking-wide">PORTIGO</span>
@@ -36,9 +38,17 @@ export function SiteHeader() {
           <div className="mr-2">
             <ThemeToggle />
           </div>
-          <a href="#templates"><Button size="sm" className="rounded-full px-6">Get Started</Button></a>
+          <a href="#templates">
+            <Button size="sm" className="rounded-full px-6">
+              Get Started
+            </Button>
+          </a>
         </div>
-        <button className="md:hidden" aria-label="Open menu" onClick={() => setOpen(!open)}>
+        <button
+          className="md:hidden"
+          aria-label="Open menu"
+          onClick={() => setOpen(!open)}
+        >
           <Menu className="h-6 w-6" />
         </button>
       </div>
@@ -46,7 +56,11 @@ export function SiteHeader() {
         <div className="border-t border-white/10 md:hidden">
           <div className="container grid gap-2 py-4">
             {links.map((l) => (
-              <a key={l.href} href={l.href} className="py-2 text-sm text-muted-foreground hover:text-foreground">
+              <a
+                key={l.href}
+                href={l.href}
+                className="py-2 text-sm text-muted-foreground hover:text-foreground"
+              >
                 {l.label}
               </a>
             ))}

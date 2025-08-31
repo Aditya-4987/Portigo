@@ -6,8 +6,16 @@ const items = [
     title: "Select a template",
     desc: "Choose from a library of professional designs crafted for creatives.",
   },
-  { icon: Edit3, title: "Edit and publish", desc: "Customize text, images, and colors. Publish with one click." },
-  { icon: Share2, title: "Share and connect", desc: "Connect your domain and share your work with the world." },
+  {
+    icon: Edit3,
+    title: "Edit and publish",
+    desc: "Customize text, images, and colors. Publish with one click.",
+  },
+  {
+    icon: Share2,
+    title: "Share and connect",
+    desc: "Connect your domain and share your work with the world.",
+  },
 ];
 
 export default function Steps() {
@@ -16,7 +24,10 @@ export default function Steps() {
       <div className="container">
         <div className="grid gap-8 md:grid-cols-3">
           {items.map(({ icon: Icon, title, desc }) => (
-            <div key={title} className="flex gap-4 rounded-xl border border-white/10 bg-white/5 p-6">
+            <div
+              key={title}
+              className="flex gap-4 rounded-xl border border-white/10 bg-white/5 p-6"
+            >
               <div className="mt-1 rounded-md bg-primary/20 p-2 text-primary">
                 <Icon className="h-5 w-5" />
               </div>

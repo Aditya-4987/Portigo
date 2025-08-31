@@ -12,14 +12,27 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/90" />
       </div>
       <div className="container flex min-h-[72vh] flex-col items-start justify-center gap-6 py-24">
-        <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs tracking-wide text-muted-foreground backdrop-blur">Portfolio Builder</span>
+        <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs tracking-wide text-muted-foreground backdrop-blur">
+          Portfolio Builder
+        </span>
         <h1 className="max-w-3xl font-serif text-4xl leading-tight sm:text-5xl md:text-6xl">
           Bring your portfolio live
-          <span className="block font-sans text-lg font-normal text-muted-foreground sm:text-xl md:text-2xl">Beautiful templates, zero code, instant hosting.</span>
+          <span className="block font-sans text-lg font-normal text-muted-foreground sm:text-xl md:text-2xl">
+            Beautiful templates, zero code, instant hosting.
+          </span>
         </h1>
         <div className="flex flex-wrap items-center gap-4">
-          <a href="#templates"><Button size="lg" className="rounded-full px-8">Get Started</Button></a>
-          <a href="#features" className="text-sm text-muted-foreground hover:text-foreground">See how it works</a>
+          <a href="#templates">
+            <Button size="lg" className="rounded-full px-8">
+              Get Started
+            </Button>
+          </a>
+          <a
+            href="#features"
+            className="text-sm text-muted-foreground hover:text-foreground"
+          >
+            See how it works
+          </a>
         </div>
       </div>
     </section>

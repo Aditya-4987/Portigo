@@ -98,10 +98,20 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    font-family:
+      Inter,
+      system-ui,
+      -apple-system,
+      Segoe UI,
+      Roboto,
+      Helvetica,
+      Arial,
+      "Apple Color Emoji",
+      "Segoe UI Emoji";
   }
 
   .font-serif {
-    font-family: "Fraunces", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family:
+      "Fraunces", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   }
 }
