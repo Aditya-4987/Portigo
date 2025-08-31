@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
 import { useState } from "react";
+import ThemeToggle from "@/components/theme/ThemeToggle";
 
 const links = [
   { href: "#templates", label: "Templates" },
@@ -31,7 +32,10 @@ export function SiteHeader() {
             </a>
           ))}
         </nav>
-        <div className="hidden md:block">
+        <div className="hidden items-center gap-2 md:flex">
+          <div className="mr-2">
+            <ThemeToggle />
+          </div>
           <a href="#templates"><Button size="sm" className="rounded-full px-6">Get Started</Button></a>
         </div>
         <button className="md:hidden" aria-label="Open menu" onClick={() => setOpen(!open)}>
@@ -46,7 +50,12 @@ export function SiteHeader() {
                 {l.label}
               </a>
             ))}
-            <a href="#templates" className="pt-2"><Button className="w-full rounded-full">Get Started</Button></a>
+            <div className="flex items-center justify-between pt-2">
+              <ThemeToggle />
+              <a href="#templates" className="flex-1 pl-4">
+                <Button className="w-full rounded-full">Get Started</Button>
+              </a>
+            </div>
           </div>
         </div>
       )}
